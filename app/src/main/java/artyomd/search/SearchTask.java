@@ -45,7 +45,14 @@ public class SearchTask extends AsyncTask<String, Void, List<GObject>> {
     public void setType(boolean type) {
         this.type = type;
     }
+/*//    private static final String API_BASE_URL = "https://www.googleapis.com/customsearch/v1?";
+//    private static final String API_KEY = "AIzaSyC9qyat9G0tlHrmg8s_dAfT1q4irjIZTlE";
+//    private static final String CX_KEY = "018166152475396321462:neztg-w1huk";
+https://github.com/artyomd/Search
 
+    private static final String API_BASE_URL = "https://www.googleapis.com/customsearch/v1?";
+    private static final String API_KEY = "AIzaSyDkEvNQECq0nsWM5J35GbhcaL1sCvPIXMQ";
+    private static final String CX_KEY = "013768594839659310155:g5wemavzcba";*/
     @Override
     protected List<GObject> doInBackground(String... params) {
         Customsearch.Builder customSearch = new Customsearch.Builder(new NetHttpTransport(), new JacksonFactory(), null);
